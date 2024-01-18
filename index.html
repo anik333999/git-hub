@@ -16,6 +16,7 @@
             font-size: 16px;
             cursor: pointer;
             margin: 10px;
+            background-color: blue;
         }
 
         #result {
@@ -25,43 +26,8 @@
     </style>
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</h1>
-    
-    <button onclick="play('rock')">Rock</button>
-    <button onclick="play('paper')">Paper</button>
-    <button onclick="play('scissors')">Scissors</button>
+    <h1>secret github version download apk </h1>
+<a href='github.apk'><button>download</button></a>
 
-    <div id="result"></div>
-
-    <script>
-        function play(playerChoice) {
-            var choices = ['rock', 'paper', 'scissors'];
-            var computerChoice = choices[Math.floor(Math.random() * choices.length)];
-
-            // To make it extremely unlikely for the player to win, the computer will almost always choose 'paper'
-            if (Math.random() < 0.9999999) {
-                computerChoice = 'paper';
-            }
-
-            var result = '';
-
-            if (playerChoice === computerChoice) {
-                result = 'It\'s a tie!';
-            } else if (
-                (playerChoice === 'rock' && computerChoice === 'scissors') ||
-                (playerChoice === 'paper' && computerChoice === 'rock') ||
-                (playerChoice === 'scissors' && computerChoice === 'paper')
-            ) {
-                result = 'You win!';
-            } else {
-                result = 'You lose!';
-
-                // Uncomment the line below if you want to reveal the computer's choice when the player loses
-                // result += ' Computer chose ' + computerChoice + '.';
-            }
-
-            document.getElementById('result').innerHTML = result;
-        }
-    </script>
 </body>
 </html>
